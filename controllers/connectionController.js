@@ -22,6 +22,11 @@ exports.postStaff = async (req, res) => {
     res.send('Employee created.')
 }
 
+exports.updateStaffMember = async (req, res) => {
+    functions.updateStaffMember();
+    res.send('staff member updated')
+}
+
 exports.deleteStaffMember = async (req, res) => {
     let {ID} = req.query;
     functions.deleteDiwa(ID);
